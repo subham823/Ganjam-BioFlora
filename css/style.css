@@ -524,3 +524,202 @@ footer p {
         font-size: 35px;
     }
 }
+
+/* =========================
+   PLANT EXPLORER
+========================= */
+
+.plant-explorer {
+    padding: 110px 7%;
+    background: #04110b;
+    scroll-margin-top: 85px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-header h1 {
+    color: #69ff9c;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.section-header p {
+    color: #a9c1b2;
+}
+
+.search-area {
+    display: flex;
+    gap: 15px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.search-area input,
+.search-area select {
+    padding: 14px;
+    border: 1px solid #286341;
+    border-radius: 10px;
+    background: #0b2416;
+    color: white;
+    width: 100%;
+}
+
+#resultCount {
+    text-align: center;
+    color: #69ff9c;
+    margin: 25px 0;
+}
+
+.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.plant-card {
+    background: linear-gradient(145deg, #133422, #071b10);
+    border: 1px solid rgba(89, 255, 145, 0.2);
+    border-radius: 16px;
+    padding: 25px;
+}
+
+.plant-card h2 {
+    color: #69ff9c;
+    margin: 12px 0;
+}
+
+.plant-card p {
+    color: #b2c9ba;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.plant-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.plant-type {
+    color: #69ff9c;
+    font-size: 13px;
+}
+
+.scientific-name {
+    font-style: italic;
+    color: #b4d9c0;
+}
+
+.details-btn {
+    margin-top: 15px;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 8px;
+    background: #45e985;
+    color: #021008;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.details-btn:hover {
+    background: #69ff9c;
+}
+
+@media (max-width: 650px) {
+    .search-area {
+        flex-direction: column;
+    }
+
+    .section-header h1 {
+        font-size: 29px;
+    }
+}
+/* =========================
+   PLANT DETAILS MODAL
+========================= */
+
+.plant-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.85);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 850px;
+    max-height: 90vh;
+    overflow-y: auto;
+
+    background: #071b10;
+    border: 1px solid #45e985;
+    border-radius: 18px;
+
+    padding: 30px;
+    position: relative;
+}
+
+.close-modal {
+    float: right;
+    background: #45e985;
+    color: #021008;
+    border: none;
+    border-radius: 8px;
+
+    padding: 7px 14px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-content h1 {
+    color: #69ff9c;
+    margin: 20px 0;
+}
+
+.detail-section {
+    margin-top: 25px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(89, 255, 145, 0.2);
+}
+
+.detail-section h3 {
+    color: #69ff9c;
+    margin-bottom: 12px;
+}
+
+.detail-section p,
+.detail-section li {
+    color: #c0d5c7;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background: #133422;
+    color: #69ff9c;
+    padding: 7px 12px;
+    border-radius: 8px;
+}
+
+.warning-note {
+    color: #ffd27a !important;
+    font-size: 13px;
+    margin-top: 15px;
+}

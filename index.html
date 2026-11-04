@@ -65,102 +65,43 @@
     </section>
 
 
-    <!-- Features Section -->
-    <section class="features">
+    
+<!-- Features Section -->
+<section class="features" id="explore">
 
-        <div class="section-title">
+    <div class="section-title">
+        <p>EXPLORE</p>
+        <h2>What You Can Discover</h2>
+    </div>
 
-            <p>EXPLORE</p>
+    <div class="cards">
 
-            <h2>
-                What You Can Discover
-            </h2>
+        <a href="#plant-explorer" class="card">
+            <div class="icon">🌱</div>
+            <h3>Plant Explorer</h3>
+            <p>Explore plant taxonomy, morphology, habitat and scientific profiles.</p>
+        </a>
 
-        </div>
+        <a href="#compounds" class="card">
+            <div class="icon">🧪</div>
+            <h3>Bioactive Compounds</h3>
+            <p>Explore phytochemicals and their reported biological activities.</p>
+        </a>
 
+        <a href="#biotechnology" class="card">
+            <div class="icon">🧬</div>
+            <h3>Biotechnology</h3>
+            <p>Discover molecular biology, biotechnology and research applications.</p>
+        </a>
 
-        <div class="cards">
+        <a href="#research" class="card">
+            <div class="icon">📚</div>
+            <h3>Research Hub</h3>
+            <p>Explore scientific literature, databases and research references.</p>
+        </a>
 
-
-            <!-- Plant Explorer -->
-            <div class="card">
-
-                <div class="icon">
-                    🌱
-                </div>
-
-                <h3>
-                    Plant Explorer
-                </h3>
-
-                <p>
-                    Explore plant names, scientific names,
-                    taxonomy, habitat and documented information.
-                </p>
-
-            </div>
-
-
-            <!-- Compounds -->
-            <div class="card">
-
-                <div class="icon">
-                    🧪
-                </div>
-
-                <h3>
-                    Bioactive Compounds
-                </h3>
-
-                <p>
-                    Learn about reported phytochemicals and
-                    their documented biological activities.
-                </p>
-
-            </div>
-
-
-            <!-- Biotechnology -->
-            <div class="card">
-
-                <div class="icon">
-                    🧬
-                </div>
-
-                <h3>
-                    Biotechnology
-                </h3>
-
-                <p>
-                    Explore biotechnology applications,
-                    research possibilities and plant science.
-                </p>
-
-            </div>
-
-
-            <!-- Research -->
-            <div class="card">
-
-                <div class="icon">
-                    📚
-                </div>
-
-                <h3>
-                    Research Hub
-                </h3>
-
-                <p>
-                    Find scientific papers, databases and
-                    references for further study.
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </section>
+    </div>
+</section>
 
 
     <!-- About Section -->
@@ -191,65 +132,131 @@
         </div>
 
     </section>
-    <!-- Plant Explorer -->
-<section class="plant-explorer">
+  
+<!-- Plant Explorer Section -->
+<section class="plant-explorer" id="plant-explorer">
 
-    <div class="section-header">
-
+  <div class="section-header">
         <h1>🌿 Ganjam Plant Explorer</h1>
-
-        <p>
-            Explore plants documented from Ganjam, Odisha
-        </p>
-
+        <p>Explore documented plants of Ganjam, Odisha</p>
     </div>
 
-    <div class="search-area">
-
-        <input
+    <div class="search-area">        <input
             type="text"
             id="searchInput"
-            placeholder="🔍 Search plant, scientific name or family..."
+            placeholder="Search plant, scientific name or family..."
         >
 
-        <select id="typeFilter">
-
+    <select id="typeFilter">
             <option value="all">All Plant Types</option>
             <option value="Tree">Trees</option>
             <option value="Shrub">Shrubs</option>
             <option value="Herb">Herbs</option>
-
         </select>
-
     </div>
 
-    <p id="resultCount">
-        Loading plants...
-    </p>
+    <p id="resultCount">Loading plants...</p>
 
     <div id="plantGrid" class="plant-grid"></div>
 
 </section>
+  
+<!-- Bioactive Compounds Section -->
+<section class="content-section" id="compounds">
+    <div class="section-title">
+        <p>PHYTOCHEMISTRY</p>
+        <h2>Bioactive Compounds</h2>
+    </div>
 
-    <!-- Footer -->
-    <footer>
+    <div class="research-panel">
+        <h3>🧪 Plant Phytochemicals</h3>
+        <p>
+            Explore reported phytochemicals, their chemical classes,
+            molecular properties and experimentally investigated
+            biological activities.
+        </p>
+        <p>
+            Compound records will be connected with the plant database
+            as verified scientific information is added.
+        </p>
+   </div>
+</section>
 
-        <h3>
-            🌿 Ganjam BioFlora
-        </h3>
+   
+<!-- Biotechnology Section -->
+<section class="content-section" id="biotechnology">
+
+    <div class="section-title">
+        <p>MOLECULAR SCIENCE</p>
+        <h2>Biotechnology Applications</h2>
+    </div>
+
+    <div class="research-panel">
+
+        <h3>🧬 Plant Biotechnology</h3>
 
         <p>
-            Explore • Identify • Research • Discover
+            Explore plant tissue culture, molecular identification,
+            DNA barcoding, genetic diversity and plant biotechnology.
         </p>
 
-        <p class="copyright">
-            © 2026 Ganjam BioFlora
+        <h3>🔬 Research Areas</h3>
+
+        <ul>
+            <li>Plant tissue culture and micropropagation</li>
+            <li>DNA extraction and molecular characterization</li>
+            <li>Phytochemical analysis</li>
+            <li>Plant-microbe interactions</li>
+            <li>Conservation biotechnology</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- Research Hub Section -->
+<section class="content-section" id="research">
+
+    <div class="section-title">
+        <p>SCIENTIFIC LITERATURE</p>
+        <h2>Research Hub</h2>
+    </div>
+
+    <div class="research-panel">
+
+        <h3>📚 Scientific Research Resources</h3>
+
+        <p>
+            Explore trusted scientific databases and literature
+            for plant taxonomy, molecular biology and biotechnology.
         </p>
 
-    </footer>
+        <ul>
+            <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">
+                    PubMed — Biomedical Research
+                </a>
+            </li>
 
+            <li>
+                <a href="https://www.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">
+                    NCBI — Biological Databases
+                </a>
+            </li>
 
-    <script src="js/script.js"></script>
-    <script src="js/app.js"></script>
-</body>
-</html>
+            <li>
+                <a href="https://powo.science.kew.org/" target="_blank" rel="noopener">
+                    Kew POWO — Plant Taxonomy
+                </a>
+            </li>
+
+            <li>
+                <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">
+                    PubChem — Chemical Information
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+</section>
